@@ -119,7 +119,7 @@ for (let i = 0; i < totalNavlist; i++) {
             if (navlist[j].querySelector("a").classList.contains("active")) {
                 //add back section class
                 addBackSectionClass(j);
-                
+
             }
             navlist[j].querySelector("a").classList.remove("active");
         }
@@ -166,14 +166,14 @@ function updateName(element) {
     }
 }
 
-document.querySelector(".hire-me").addEventListener("click", function () {
-    const sectionIndex = this.getAttribute("data-section-index");
-    // console.log(sectionIndex)
-    showSection(this);
-    updateName(this);
-    removeBackSectionClass();
-    addBackSectionClass(sectionIndex);
-})
+// document.querySelector(".hire-me").addEventListener("click", function () {
+//     const sectionIndex = this.getAttribute("data-section-index");
+//     // console.log(sectionIndex)
+//     showSection(this);
+//     updateName(this);
+//     removeBackSectionClass();
+//     addBackSectionClass(sectionIndex);
+// })
 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".aside");
